@@ -6,7 +6,19 @@
     android:background="@color/whiteBackground"
     android:layout_height="match_parent">
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/appCompatEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bcp_logo">
 
+    </androidx.appcompat.widget.AppCompatImageView>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -22,7 +34,7 @@
         android:layout_width="match_parent"
         android:layout_marginRight="155dp"
         android:layout_height="wrap_content"
-
+        android:theme="@android:style/Theme.Black"
 
         app:layout_constraintBottom_toTopOf="@id/guideline"></androidx.appcompat.widget.AppCompatEditText>
 
@@ -41,7 +53,7 @@
         android:layout_marginRight="155dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-
+      android:theme="@android:style/Theme.Black"
         app:layout_constraintEnd_toStartOf="@+id/btnMoneyTwo"
         app:layout_constraintStart_toStartOf="@+id/appCompatEditText"
         app:layout_constraintTop_toBottomOf="@id/guideline">
