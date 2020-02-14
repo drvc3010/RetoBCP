@@ -6,12 +6,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/whiteBackground"
-    tools:context=".ui.main.MainActivity">
+    tools:context=".ui.MainActivity">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/bcp_logo"
+        android:id="@+id/logoBcp"
         android:layout_marginEnd="5dp"
         android:layout_marginStart="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,6 +20,21 @@
         app:layout_constraintTop_toTopOf="parent">
 
     </androidx.appcompat.widget.AppCompatImageView>
+
+    <ProgressBar
+        android:id="@+id/progress_Bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:indeterminate="true"
+        android:max="100"
+        android:minWidth="200dp"
+        android:minHeight="50dp"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoBcp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
