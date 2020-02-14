@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="30dp"
         android:layout_marginStart="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/appCompatEditText"
+        app:layout_constraintBottom_toTopOf="@+id/edtOne"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -30,7 +30,7 @@
         />
 
     <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/appCompatEditText"
+        android:id="@+id/edtOne"
         android:layout_width="match_parent"
         android:layout_marginRight="155dp"
         android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:background="@drawable/buton_radius_top"
-        android:id="@+id/btnRefresMoneyOne"
+        android:id="@+id/btnMoneyOne"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="3dp"
         app:layout_constraintBottom_toTopOf="@id/guideline"></androidx.appcompat.widget.AppCompatButton>
@@ -55,7 +55,7 @@
         android:layout_marginTop="5dp"
       android:theme="@android:style/Theme.Black"
         app:layout_constraintEnd_toStartOf="@+id/btnMoneyTwo"
-        app:layout_constraintStart_toStartOf="@+id/appCompatEditText"
+        app:layout_constraintStart_toStartOf="@+id/edtOne"
         app:layout_constraintTop_toBottomOf="@id/guideline">
 
     </androidx.appcompat.widget.AppCompatEditText>
@@ -72,7 +72,7 @@
 
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/appCompatImageView"
+        android:id="@+id/btnInvert"
         android:layout_width="40dp"
         android:layout_height="40dp"
 
@@ -81,8 +81,8 @@
         android:elevation="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/btnMoneyTwo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/appCompatEditText"
-        app:layout_constraintTop_toTopOf="@+id/btnRefresMoneyOne"
+        android:layout_marginRight="12dp"
+        app:layout_constraintTop_toTopOf="@+id/btnMoneyOne"
         app:srcCompat="@drawable/sync_32">
 
     </androidx.appcompat.widget.AppCompatImageView>
